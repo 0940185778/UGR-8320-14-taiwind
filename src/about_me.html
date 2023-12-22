@@ -3,22 +3,47 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>aboute me page</title>
   </head>
-  <body>
-    <div>
-      <h1>aboute <span>me</span></h1>
-      <figure>
-        <img
-          src="img/photo_2023-11-23_19-49-08.jpg"
-          alt="picture"
-         
-        >
-        <figcaption>biniyams photo</figcaption>
-      </figure>
-      <p>
-        My name is <strong>Biniyam Assefa</strong>, and I am a software engineer
-        student at Addis Ababa University. I was born and raised in
+  <body class="bg-cyan-50">
+    <section class="w-full">
+      <header class="bg-cyan-400">
+        <nav class="p-7 bg-white shadow md:flex md:items-center md:justify-between">
+          <div class="flex justify-between items-center">
+          <img  src="img/download.webp" alt="portfolio logo" class="logo h-10 inline" >
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+          </span>
+          </div>
+          <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:pl-0 pl-7 md:opacity-100 opacity-0">
+            <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500" href="index.html">HOME</a></li>
+            <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="about_me.html">ABOUT ME</a></li>
+            <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="travel.html">TRAVEL</a></li>
+            <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="voluntary_activity.html">VOLUNTARY ACIVITY</a></li>
+            <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="contact_info.html">CONTACT INFO</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h1 class="p-6 text-center uppercase ">aboute <span class="text-yellow-700">me</span></h1>
+
+      <div class="flex flex-wrap gap-5 justify-evenly">
+        <div class="max-w-[400px]">
+          <figure>
+          <img
+            src="img/photo_2023-11-23_19-49-08.jpg"
+            alt="picture"
+          
+          >
+          <figcaption>biniyams photo</figcaption>
+        </figure>
+        </div>
+        <div class="w-2/5  min-w-64">
+        <p>
+          My name is <strong>Biniyam Assefa</strong>, and I am a software engineer
+          student at Addis Ababa University. I was born and raised in
         <em>Woldia</em>, a city in the Amhara Region of Ethiopia. Woldia is
         known for its cultural and religious festivals, such as the
         <strong>Ashenda</strong> and the <strong>Timket</strong>. I grew up in a
@@ -37,12 +62,18 @@
         extracurricular activities, such as sports, music, and clubs. I am proud
         of my achievements so far, and I hope to accomplish more in the future.
       </p>
-      <a href="/resource/cv.pdf" download="Biniyam's_Resume"
-        >Download resume
+      <div>
+      <a class="hover:text-cyan-500 duration-500" href="/resource/cv.pdf" download="Biniyam's_Resume"
+        ><strong>Download resume</strong> 
       </a>
-    </div>
-    <div>
-      <h2>Education</h2>
+      </div>
+      </div>
+      </div>
+      
+    
+      <div class="flex flex-wrap  justify-evenly p-4 gap-4">
+      <div class=" w-1/5  min-w-64 shadow-xl bg-green-500 p-4 ">
+      <h2 class="uppercase hover:text-cyan-500">Education</h2>
       <p>
         I start to learn when i was 3 years old , and i get in Kg school and
         after 3 year i got in primery school. and i learnt their until i finish
@@ -52,7 +83,9 @@
         finished i joined Addis Ababa university and know i am a 3rd year
         software engineering student.
       </p>
-      <h2>Hobbies</h2>
+      </div>
+      <div class="w-1/5 min-w-64 shadow-xl bg-yellow-500 p-4">
+      <h2 class="uppercase hover:text-cyan-500">Hobbies</h2>
       <p>
         I dream of living a happy and fulfilling life, with a balance between
         work and leisure, and a harmony between body and mind. I dream of
@@ -63,11 +96,12 @@
         proficient and creative software engineer, who can design and develop
         innovative and useful applications for various domains and platforms.
       </p>
-
-      <h2>Skills</h2>
+      </div>
+       <div class=" w-1/5 min-w-64 shadow-xl bg-red-600 p-4 ">
+      <h2 class="uppercase hover:text-cyan-500">Skills</h2>
       <ul>
         <li>
-          <strong>hard skill</strong>
+          <strong >hard skill</strong>
           <p>
             my hard skill is I know three programing languges python, java and
             javscripit, and i am good at data structure and web develpoment and
@@ -86,7 +120,9 @@
           </p>
         </li>
       </ul>
-      <h2>Experience</h2>
+       </div>
+      <div class=" w-1/5 min-w-64 shadow-xl bg-blue-600 p-4">
+      <h2 class="uppercase hover:text-cyan-500">Experience</h2>
       <p>
         in <strong>Life</strong> i have lot of Experience just like
         <em>Communication</em> and <em> argumentation</em> are two important
@@ -101,13 +137,16 @@
         teams. I am always eager to apply and enhance these skills in new
         challenges and opportunities.
       </p>
+      </div>
     </div>
-    <section id="footer">
-      <div class="footer container">
-        <div class="brand">
-          <h3><span>B</span>iniyam <span>A</span>ssefa</h3>
+    
+
+
+    <section class="bg-violet-500">
+      <div class="brand">
+          <h3 class="text-center"><span class="text-yellow-400">B</span>iniyam <span class="text-yellow-400">A</span>ssefa</h3>
         </div>
-        <div class="social-icon">
+      <div class="flex flex-wrap  justify-evenly">
           <div class="social-item">
             <a href="Biniyam_Assefa"
               ><img
@@ -134,8 +173,9 @@
             >
           </div>
         </div>
-        <p>Copyright © 2023 Biniyam. All rights reserved</p>
+        <p class="text-center">Copyright © 2023 Biniyam. All rights reserved</p>
       </div>
     </section>
+  <script src="/src/script.js"></script>
   </body>
 </html>

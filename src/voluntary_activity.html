@@ -3,11 +3,32 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>voluntary activity</title>
   </head>
-  <body>
-    <div>
-      <h1>voluntary activity</h1>
+  <body class="bg-cyan-50">
+    <header class="bg-cyan-400">
+      <nav class="p-7 bg-white shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+        <img  src="img/download.webp" alt="portfolio logo" class="logo h-10 inline" >
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+        </span>
+        </div>
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:pl-0 pl-7 md:opacity-100 opacity-0">
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500" href="index.html">HOME</a></li>
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="about_me.html">ABOUT ME</a></li>
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="travel.html">TRAVEL</a></li>
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="voluntary_activity.html">VOLUNTARY ACIVITY</a></li>
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="contact_info.html">CONTACT INFO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="flex flex-wrap  justify-evenly p-4 flex-row-reverse">
+    <div class="w-2/5 min-w-64">
+      <h1 class="p-6 text-center uppercase">voluntary <span class="text-yellow-700">activity</span></h1>
       <p>
         Volunteering is a rewarding activity that allows me to help others and
         make a positive impact in the world. I have participated in various
@@ -26,19 +47,22 @@
         them with companionship, care, and comfort. I also helped to organize
         recreational and social activities for them to enjoy.
       </p>
-      <div>
-        <video src="resource/mekedonia.mp4" controls></video>
+    </div>
+     <div class="max-w-[50%]  min-w-64">
+        <video  src="resource/mekedonia.mp4" controls></video>
         <p>
           If Your browser doesn't support this video. Here is a
           <a href="resource/mekedonia.mp4">link to the video</a>
           instead.
         </p>
-      </div>
-      <div>
-        <div>
-          <h5>mekedonoya charity</h5>
+     </div>
+    </div>
+
+      <div class="flex flex-wrap  justify-evenly gap-2 p-4">
+        <div class="  border border-gray-400 rounded-lg overflow-hidden min-w-64 bg-red-100  items-center p-7 mr-7 ">
+          <h5 class="p-6 text-center uppercase">mekedonoya charity</h5>
           <figure>
-            <img
+            <img class="max-w-[350px] object-cover"
               src="img/mekedonoya.jpg"
               alt="
           mekedonoya"
@@ -46,30 +70,29 @@
             <figcaption>picture when viisit mekedoniya</figcaption>
           </figure>
         </div>
-        <div>
+        <div  class="  border border-gray-400 rounded-lg overflow-hidden min-w-64 bg-red-100  items-center p-7 ">
           <h5>gergesenon Charity</h5>
           <figure>
-            <img src="img/gergesenon.jpg" alt="gergesenon" >
+            <img class="max-w-[500px] object-cover" src="img/gergesenon.jpg" alt="gergesenon" >
             <figcaption>picture when visit gergesenon</figcaption>
           </figure>
         </div>
-        <div>
+        <div  class="  border border-gray-400 rounded-lg overflow-hidden min-w-64 bg-red-100  items-center p-7 ">
           <h5>Abebechi Gubena charity</h5>
           <figure>
-            <img src="img/abebchi_gubena.webp" alt="abebechi gubena charity" >
+            <img class="max-w-[350px]  object-cover"  src="img/abebchi_gubena.webp" alt="abebechi gubena charity" >
             <figcaption>
-              abebechi guben and the children that she helped to learn.
+              abebechi guben and the children that <br>she helped to learn.
             </figcaption>
           </figure>
         </div>
       </div>
-    </div>
-    <section id="footer">
-      <div class="footer container">
-        <div class="brand">
-          <h3><span>B</span>iniyam <span>A</span>ssefa</h3>
+    
+    <section class="bg-violet-500">
+      <div class="brand">
+          <h3 class="text-center"><span class="text-yellow-400">B</span>iniyam <span class="text-yellow-400">A</span>ssefa</h3>
         </div>
-        <div class="social-icon">
+      <div class="flex flex-wrap  justify-evenly">
           <div class="social-item">
             <a href="Biniyam_Assefa"
               ><img
@@ -96,8 +119,9 @@
             >
           </div>
         </div>
-        <p>Copyright © 2023 Biniyam. All rights reserved</p>
+        <p class="text-center">Copyright © 2023 Biniyam. All rights reserved</p>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

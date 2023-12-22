@@ -3,13 +3,33 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Travel</title>
   </head>
-  <body>
-    <div>
-      <div>
-        <h1>place that i visitd</h1>
-        <h5>The first place I visited is Lalibela</h5>
+  <body class="bg-cyan-50" >
+    <header class="bg-cyan-400">
+      <nav class="p-7 bg-white shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+        <img  src="img/download.webp" alt="portfolio logo" class="logo h-10 inline" >
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+        </span>
+        </div>
+        <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:pl-0 pl-7 md:opacity-100 opacity-0">
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500" href="index.html">HOME</a></li>
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="about_me.html">ABOUT ME</a></li>
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="travel.html">TRAVEL</a></li>
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="voluntary_activity.html">VOLUNTARY ACIVITY</a></li>
+          <li class="mx-4 my-6 md:my-0"><a class="text-x1 hover:text-cyan-500 duration-500"  href="contact_info.html">CONTACT INFO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="flex flex-row-reverse flex-wrap justify-center items-center">
+      <div class=" p-4 w-full md:w-1/2">
+        <h1 class="p-6 text-center uppercase">place that i visitd</h1>
+        <h5 class="p-6 text-center uppercase">The first place I visited is Lalibela</h5>
         <p>
           I have always wanted to visit Lalibela and i did , the holy city of
           Ethiopia, where the ancient rock-hewn churches stand as a testament to
@@ -26,7 +46,7 @@
           tourist site, it was a living and breathing expression of the
           Ethiopian culture and history
         </p>
-        <h5>The second place I visited is Dubai</h5>
+        <h5 class="p-6 text-center uppercase">The second place I visited is Dubai</h5>
         <p>
           Dubai was an amazing place to visit, and I had a wonderful time there.
           I was amazed by the beauty and the diversity of the city, which
@@ -42,8 +62,10 @@
           traditional dinner. Dubai was a place where I experienced the best of
           both worlds, and that is why I loved it.
         </p>
-        <div>
-          <div>
+      </div>
+        <div class="w-1/2 p-4" >
+          <div class="flex flex-row-reverse flex-wrap justify-center items-center">
+            <div class=" p-4 w-full md:w-1/2">
             <video controls>
               <source src="resource/LalibelaEthiopia(ላሊበላ).mp4" >
               <p>
@@ -55,15 +77,20 @@
               </p>
             </video>
           </div>
-          <img src="img/th.jpg" alt="lalibela" >
-          <img src="img/dubai.jpg" alt="dubai" >
-          <img src="img/biniyam.jpg" alt="biniyam in museum" >
+          <div class="p-4 w-full md:w-1/2"><img src="img/th.jpg" alt="lalibela" ></div>
+          </div>
+          <div class="flex flex-row-reverse flex-wrap justify-center items-center">
+            <div class=" p-4 w-full md:w-1/2"><img src="img/dubai.jpg" alt="dubai" ></div>
+          <div class="p-4 w-full md:w-1/2"><img src="img/biniyam.jpg" alt="biniyam in museum" ></div>
+          </div>
         </div>
+
       </div>
     </div>
-    <div>
-      <h1>place i will visit</h1>
-      <h5>the first plase i will visit is egypt</h5>
+    <div class="flex flex-row-reverse flex-wrap justify-center items-center">
+      <div class=" p-4 w-full md:w-1/2">
+      <h1 class="p-6 text-center uppercase">place i will visit</h1>
+      <h5 class="p-6 text-center uppercase">the first plase i will visit is egypt</h5>
       <p>
         Egypt is a wonderful country to visit, with many amazing things to see
         and do. I can explore the ancient pyramids of Giza, the largest and
@@ -78,7 +105,7 @@
         Aswan is a beautiful city on the Nile, where you can see the High Dam,
         the Philae Temple, and the Nubian villages
       </p>
-      <h5>the second plase i will visit is</h5>
+      <h5 class="p-6 text-center uppercase">the second plase i will visit is</h5>
       <p>
         Israel is a beautiful and diverse country, with many attractions for
         tourists of different interests and preferences.I can visit the holy
@@ -93,27 +120,32 @@
         Sea Scrolls, the oldest biblical manuscripts, and the Yad Vashem, the
         worlds largest Holocaust memorial museum.
       </p>
-      <div>
-        <figure>
-          <img src="img/egeypt.jpg" alt="egeypt" >
-          <img src="img/egypt2.jpg" alt="israel-jerusalem" >
-          <img
+    </div>
+    <div class="w-1/2 p-4">
+      <div class="flex flex-row-reverse flex-wrap justify-center items-center">
+        <div class=" p-4 w-full md:w-1/2"><img src="img/egeypt.jpg" alt="egeypt" ></div>
+        <div class="p-4 w-full md:w-1/2"><img src="img/egypt2.jpg" alt="israel-jerusalem" ></div>
+      </div>
+      <div class="flex flex-row-reverse flex-wrap justify-center items-center">
+        <div class=" p-4 w-full md:w-1/2"><img
             src="img/israel-jerusalem-skyline.jpg"
             alt="biniyam in museum"
             
-          >
+          ></div>
+          <div class="p-4 w-full md:w-1/2"><figure>
           <img src="img/israel2.jpg" alt="egeypt" >
-
+         
           <figcaption>this picturs are the place that i will visite</figcaption>
-        </figure>
+        </figure></div>
+      </div>   
       </div>
     </div>
-    <section id="footer">
-      <div class="footer container">
-        <div class="brand">
-          <h3><span>B</span>iniyam <span>A</span>ssefa</h3>
+
+    <section class="bg-violet-500">
+      <div class="brand">
+          <h3 class="text-center"><span class="text-yellow-400">B</span>iniyam <span class="text-yellow-400">A</span>ssefa</h3>
         </div>
-        <div class="social-icon">
+      <div class="flex flex-wrap  justify-evenly">
           <div class="social-item">
             <a href="Biniyam_Assefa"
               ><img
@@ -140,8 +172,9 @@
             >
           </div>
         </div>
-        <p>Copyright © 2023 Biniyam. All rights reserved</p>
+        <p class="text-center">Copyright © 2023 Biniyam. All rights reserved</p>
       </div>
     </section>
+    <script src="/src/script.js"></script>
   </body>
 </html>
